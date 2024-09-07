@@ -8,6 +8,9 @@
     --azul-oscuro: #142433;
     --gris: #939393;
     --gris-2: #EBEBEB;
+    --fuente-1: Big Shoulders Display;
+    --fuente-2: Lexend Deca;
+    --fuente-3: Roboto;
 }
 
 * {
@@ -42,7 +45,7 @@ textarea {
 .button1 {
     background: var(--rojo-terracota);
     color: #fff;
-    font-family: Lexend Deca;
+    font-family: var(--fuente-3);
     font-size: 16px;
     font-weight: 600;
     padding: 15px 35px;
@@ -50,9 +53,9 @@ textarea {
 }
 
 .button2 {
-    background: #fff;
-    color: var(--azul-petroleo);
-    font-family: Lexend Deca;
+    color: var(--beige);
+    background: var(--azul-petroleo);
+    font-family: var(--fuente-3);
     font-size: 16px;
     font-weight: 600;
     padding: 15px 35px;
@@ -62,6 +65,8 @@ textarea {
 .icons-container {
     display: flex;
     justify-content: space-evenly;
+    gap: 200px;
+    flex-wrap: wrap;
 }
 
 .icon {
@@ -69,4 +74,14 @@ textarea {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+}
+
+@media (width <=360px) {
+    .icons-container {
+        gap: 20px;
+    }
+
+    .icon {
+        max-width: 112px;
+    }
 }
