@@ -1,0 +1,122 @@
+.segment1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0;
+    gap: 85px;
+}
+
+.segment1 .section-container {
+    width: 655px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.segment1 .section-container h2 {
+    font-family: var(--fuente-1);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--beige);
+}
+
+.segment1 .section-container p {
+    font-family: var(--fuente-2);
+    font-size: 16px;
+    color: var(--beige);
+}
+
+.segment1 .section-container .button1 {
+    align-self: flex-start;
+}
+
+.segment1 img {
+    width: 600px;
+    height: 400px;
+    border-radius: 12px;
+}
+
+.segment1-features {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0;
+    gap: 85px;
+}
+
+.segment1-features .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.segment1-features .section-container h2 {
+    font-family: var(--fuente-1);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--azul-oscuro);
+    text-align: center;
+}
+
+.segment1-features .icons-container .icon img {
+    height: 150px;
+}
+
+.segment1-features .icons-container .icon span {
+    font-family: var(--fuente-1);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--azul-oscuro);
+}
+
+@media (width <=360px) {
+    .segment1 {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding-block: 30px;
+    }
+
+    .segment1 .section-container {
+        width: 300px;
+        gap: 20px;
+    }
+
+    .segment1 .section-container h2 {
+        font-size: 32px;
+    }
+
+    .segment1 .section-container p {
+        font-size: 13px;
+    }
+
+    .segment1 .section-container .button1 {
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .segment1 img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .segment1-features .section-container {
+        width: 300px;
+    }
+
+    .segment1-features .section-container h2 {
+        font-size: 36px;
+    }
+
+    .segment1-features .icons-container .icon img {
+        height: 85px;
+    }
+
+    .segment1-features .icons-container .icon span {
+        font-weight: 900;
+        text-align: center;
+        font-size: 24px;
+    }
+
+}
