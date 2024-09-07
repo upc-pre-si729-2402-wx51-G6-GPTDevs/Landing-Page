@@ -5,12 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/global.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/hero.css">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <title>TaskLinker</title>
 </head>
 
-<body>
+<body id="top">
+    <header class="header gradient1" role="banner">
+        <img src="assets/img/logo.png" alt="TaskLinker Logo" aria-label="TaskLinker Logo">
+        <div class="menu-icon" role="button" aria-label="Menu">
+            <span>&#9776;</span>
+        </div>
+        <ul class="navbar">
+            <li class="navbar__ul"><a href="#top">About</a></li>
+            <li class="navbar__ul"><a href="#segment1">How It Works</a></li>
+            <li class="navbar__ul"><a href="#testimonials">Testimonials</a></li>
+            <li class="navbar__ul"><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
 
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="section-container">
+            <h1 id="hero-title">Connecting Workers and Employers</h1>
+            <div class="buttons">
+                <button class="button1"><a href="#segment1" aria-label="Find Flexible Work">Find Flexible
+                        Work</a></button>
+                <button class="button2"><a href="#segment2" aria-label="Hire Temporary Talent">Hire Temporary
+                        Talent</a></button>
+            </div>
+        </div>
+    </section>
 </body>
+<script src="assets/script.js"></script>
 
 </html>
