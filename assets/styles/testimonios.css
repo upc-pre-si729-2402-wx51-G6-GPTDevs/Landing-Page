@@ -1,0 +1,139 @@
+.testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0;
+    gap: 85px;
+}
+
+.testimonials .section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.testimonials .section-container h2 {
+    font-family: var(--fuente-1);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--beige);
+    text-align: center;
+}
+
+.testimonials .section-container>p {
+    font-family: var(--fuente-2);
+    font-size: 24px;
+    color: var(--beige);
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 30px;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 350px;
+}
+
+.card-text-name {
+    display: flex;
+    align-items: baseline;
+    font-family: var(--fuente-1);
+}
+
+.card-text-name h3 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--fuente-3);
+}
+
+.card-text-name h4 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--fuente-3);
+    color: var(--gris);
+}
+
+.card-text p {
+    font-family: var(--fuente-2);
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--gris);
+}
+
+@media (width <=360px) {
+    .testimonials {
+        padding-block: 40px;
+    }
+
+    .testimonials .section-container {
+        width: 330px;
+    }
+
+    .testimonials .section-container h2 {
+        font-size: 32px;
+    }
+
+    .testimonials .section-container>p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-radius: 12px;
+        gap: 30px;
+
+    }
+
+    .card img {
+        aspect-ratio: 1/1;
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .card-text-name {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .card-text-name h3 {
+        font-size: 20px;
+    }
+
+    .card-text p {
+        font-size: 14px;
+    }
+}
