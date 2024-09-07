@@ -1,0 +1,84 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 75px 0;
+    gap: 85px;
+}
+
+.contact .section-container {
+    width: 655px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}
+
+.contact .section-container h2 {
+    font-family: var(--fuente-1);
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--azul-oscuro);
+}
+
+.contact .section-container p {
+    font-family: var(--fuente-2);
+    font-size: 24px;
+    color: var(--gris);
+    text-align: center;
+}
+
+.contact .section-container .buttons-container input {
+    padding-block: 20px;
+    padding-inline: 20px 50px;
+    border-radius: 8px;
+    border: solid .5px var(--gris);
+    font-family: var(--fuente-2);
+    background: #fff;
+}
+
+.contact .section-container .buttons-container input::placeholder {
+    font-weight: 200;
+}
+
+@media (width <=360px) {
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 75px 0;
+        gap: 85px;
+    }
+
+    .contact .section-container {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .contact .section-container h2 {
+        font-size: 48px;
+    }
+
+    .contact .section-container p {
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .contact .section-container .buttons-container input {
+        padding: 0px;
+        width: 190px;
+        height: 32px;
+        text-align: center;
+    }
+
+    .contact .section-container .buttons-container .button2 {
+        padding: 0px;
+        width: 110px;
+        height: 32px;
+    }
+}
