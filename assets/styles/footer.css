@@ -1,0 +1,15 @@
+.footer {
+    padding-block: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .icons-container {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .icons-container .icon img {
+    width: 40px;
+    height: 40px;
+}
